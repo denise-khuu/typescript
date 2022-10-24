@@ -1,0 +1,8 @@
+= NgRx
+
+State Management is a big topic in big front-end application. This section explains the fundamentals of the industry standard library NgRx, showing its main components.
+
+*** link:guide-ngrx-getting-started[Introduction]
+*** link:guide-ngrx-simple-store[State, Selection and Reducers]
+*** link:guide-ngrx-effects[Side effects with NgRx/Effects]
+*** link:guide-ngrx-entity[Simplifying CRUD with NgRx/Entity]

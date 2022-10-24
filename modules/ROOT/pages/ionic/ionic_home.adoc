@@ -1,0 +1,3 @@
+= Ionic
+
+As part of the devon4ng stack, we include a small section to explain how to develop hybrid mobile Ionic/Angular applications and create PWAs with this UI library. As the previous section, the contents are demonstrated in the samples folder.

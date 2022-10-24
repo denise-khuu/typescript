@@ -1,0 +1,87 @@
+= nvm: the node version manager
+
+nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and windows WSL.
+
+== Installing and Updating
+
+To install or update nvm, you should run the install script. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
+
+[source,sh]
+----
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+----
+
+[source,sh]
+----
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+----
+
+Running either of the above commands downloads a script and runs it. The script clones the nvm repository to ~/.nvm, and attempts to add the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
+
+More info at https://github.com/nvm-sh/nvm#install--update-script.
+
+== Windows version 
+
+IMPORTANT: Uninstall any pre-existing node.js installation. Windows users should use the Windows installer.
+
+nvm-windows is similar to nvm but not identical. The installer can be downloaded from link:https://github.com/coreybutler/nvm-windows/releases[here].
+
+More info at https://github.com/coreybutler/nvm-windows. 
+
+== Usage
+
+To download, compile, and install the latest release of node, do this:
+
+[source,sh]
+----
+nvm install node # "node" is an alias for the latest version
+----
+
+To install a specific version of node:
+
+[source,sh]
+----
+nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
+----
+
+The first version installed becomes the default. New shells will start with the default version of node (e.g., `nvm alias default`).
+
+We recommend to install and make it default the latest node.js LTS version. 
+
+[source,sh]
+----
+nvm install --lts
+nvm alias default lts/* # "lts/*" is an alias for the latest LTS version
+----
+
+More info at https://github.com/nvm-sh/nvm#usage. 
+
+== .nvmrc
+
+You can create a `.nvmrc` file containing a node version number (or any other string that nvm understands; see `nvm --help` for details) in the project root directory (or any parent directory). Afterwards, `nvm use`, `nvm install`, `nvm exec`, `nvm run`, and `nvm which` will use the version specified in the `.nvmrc` file if no version is supplied on the command line.
+
+For example, to make nvm default to the latest 5.9 release, the latest LTS version, or the latest node version for the current directory:
+
+[source,sh]
+----
+$ echo "5.9" > .nvmrc
+
+$ echo "lts/*" > .nvmrc # to default to the latest LTS version
+
+$ echo "node" > .nvmrc # to default to the latest version
+----
+
+NOTE: NB these examples assume a POSIX-compliant shell version of `echo`. If you use a Windows `cmd` development environment, eg the `.nvmrc` file is used to configure a remote Linux deployment, then keep in mind the `"`s will be copied leading to an invalid file. Remove them.
+
+Then when you run nvm:
+
+[source,sh]
+----
+$ nvm use
+Found '/path/to/project/.nvmrc' with version <5.9>
+Now using node v5.9.1 (npm v3.7.3)
+----
+
+`nvm use` et. al. will traverse directory structure upwards from the current directory looking for the `.nvmrc` file. In other words, running `nvm use` et. al. in any subdirectory of a directory with an `.nvmrc` will result in that `.nvmrc` being utilized.
+
+The contents of a `.nvmrc` file must be the `<version>` (as described by `nvm --help`) followed by a newline. No trailing spaces are allowed, and the trailing newline is required.

@@ -1,0 +1,21 @@
+= Links to UI Libraries
+
+We have listed some links to UI libraries and common requested feature components we recommend. Here is the list
+
+== UI libraries:
+** https://material.angular.io/
+** https://teradata.github.io/covalent/v3/#/
+** https://www.primefaces.org/primeng/
+** https://ng.ant.design/docs/introduce/en
+** https://clarity.design/get-started/developing/angular/
+
+== Complex components or features:
+
+**  Grids/Data Tables
+*** https://www.ag-grid.com/angular-data-grid/
+*** https://github.com/swimlane/ngx-datatable - docs at https://swimlane.gitbook.io/ngx-datatable/
+** Charts
+*** https://github.com/xieziyu/ngx-echarts - Angular wrapper of https://echarts.apache.org/en/index.html
+*** https://github.com/swimlane/ngx-charts - docs https://swimlane.gitbook.io/ngx-charts/
+** i18n - internationalization
+*** https://github.com/ngneat/transloco - docs at https://ngneat.github.io/transloco/
