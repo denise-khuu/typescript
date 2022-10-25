@@ -1,0 +1,1 @@
+This is the main section of the documentation, where the developer will find guidelines for accessibility, how to use the Angular toolchain, how to refactor components, create libraries and, in general, maintain Angular applications. But last and not least, developers will also find solutions to common problems many of the Angular projects may have.

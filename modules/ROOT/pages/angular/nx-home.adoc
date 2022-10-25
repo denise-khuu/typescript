@@ -1,0 +1,5 @@
+= Nx
+
+We have included a small section to explain how we can get started with the Nx CLI in an Angular Application.
+
+*** link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]

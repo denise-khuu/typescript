@@ -1,0 +1,33 @@
+* xref:general/general.adoc[General]
+** xref:general/node_version_manager.adoc[nvm : Node Version Manager]
+** xref:general/package_managers.adoc[Package Managers]
+** xref:general/package_manager_workflow.adoc[Package Managers Workflow]
+** xref:general/yarn_2.adoc[Yarn 2]
+
+* xref:angular/angular-home.adoc[Angular]
+** xref:angular/architecture-home.adoc[Architecture]
+** xref:angular/ngrx-home.adoc[NgRx]
+** xref:angular/guide-home.adoc[Guides]
+** xref:angular/nx-home.adoc[Nx]
+** Resources
+*** xref:angular/guide-angular-libraries.adoc[Angular Libraries]
+
+* xref:ionic/ionic_home.adoc[Ionic]
+** xref:ionic/ionic_getting_started.adoc[Ionic Getting Started]
+** xref:ionic/ionic_to_android.adoc[Ionic to Android]
+** xref:ionic/ionic_pwa.adoc[Ionic Progress Web Apps]
+
+* xref:nestjs/nestjs-home.adoc[NodeJS ]
+** Layers
+*** xref:nestjs/layer-controller.adoc[Controller]
+*** xref:nestjs/layer-service.adoc[Service]
+*** xref:nestjs/layer-dataaccess.adoc[Data Access]
+** xref:nestjs/guide-nestjs-home.adoc[Guides]
+** devon4node applications
+*** xref:nestjs/samples.adoc[devon4node Samples]
+*** xref:nestjs/samples-step-by-step.adoc[devon4node Sample Step by Step]
+** Resources
+*** xref:nestjs/guide-nestjs-libraries.adoc[NestJS Libraries]
+
+
+

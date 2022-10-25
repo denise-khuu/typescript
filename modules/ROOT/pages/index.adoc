@@ -1,0 +1,11 @@
+:imagesdir: ../images
+
+= devon4ts
+
+This guide describes an application architecture for web client development in https://angular.io/[Angular] with nx and NestJs backend.
+
+
+
+
+
+
