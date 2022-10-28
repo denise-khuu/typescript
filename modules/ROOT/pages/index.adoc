@@ -1,6 +1,6 @@
 :imagesdir: ../images
 
-= devon4ts
+= Welcome to the typescript stack of devonfw
 
 This guide describes an application architecture for web client development in https://angular.io/[Angular] with nx and NestJs backend.
 
